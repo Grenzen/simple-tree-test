@@ -1,9 +1,16 @@
+import { BrowserRouter as Router } from 'react-router-dom'
+import { useRoutes } from './routes'
+
 import 'normalize.css';
 import './App.css';
 
 function App() {
+  const routes = useRoutes()
+
   return (
-    <h1>Simple Tree</h1>
+    <Router>
+      { routes }
+    </Router>
   );
 }
 

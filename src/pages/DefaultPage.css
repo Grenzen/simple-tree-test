@@ -1,0 +1,16 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+}
+
+.main__article {
+  flex: 3 0 auto;
+  background-color: #E5BD47;
+}
+
+@media screen and (min-width: 600px) {
+  .main {
+    flex-direction: row;
+  }
+}

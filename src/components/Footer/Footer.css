@@ -1,0 +1,15 @@
+.footer {
+  background-color: #2F6665;
+}
+
+.footer__title {
+  margin: 0;
+  padding: 2rem;
+  color: #DCDCDD;
+  font-size: 1.5rem;
+}
+
+.footer__title__link {
+  text-decoration: none;
+  color: #E5BD47;
+}

@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: inherit;
+}
+
+html {
+  font-size: 10px;
+}

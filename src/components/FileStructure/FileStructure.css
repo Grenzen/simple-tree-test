@@ -1,0 +1,42 @@
+.file-structure {
+  flex: 1 1 auto;
+  order: -1;
+  background-color: #2C363F;
+}
+
+.file-structure__ul {
+  padding-inline-start: 1.3rem;
+  list-style-type: none;
+}
+
+.file-structure__li {
+  font-size: 1.3rem;
+}
+
+.file-structure__a {
+  text-decoration: none;
+  color: #DCDCDD;
+}
+
+.file-structure__a:hover {
+  color: #E5BD47;
+  transition: all .5s ease-in-out;
+}
+
+.file-structure__a.file-structure__a-folder:focus {
+  color: #E5BD47;
+  text-decoration: underline;
+  transition: all .5s ease-in-out;
+}
+
+.file-structure__a.file-structure__a-folder--active {
+  color: #E5BD47;
+  text-decoration: underline;
+  transition: all .5s ease-in-out;
+}
+
+.file-structure__icons {
+  display: inline-flex;
+  padding-right: 0.5rem;
+  vertical-align: middle;
+}
