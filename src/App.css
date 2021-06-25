@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 body {
-  min-height: 100vh;
+  height: 100vh;
 }
 
 body::-webkit-scrollbar {
@@ -12,7 +12,7 @@ body::-webkit-scrollbar {
 #root {
   display: flex;
   flex-direction: column;
-  min-height: inherit;
+  height: inherit;
 }
 
 #root::-webkit-scrollbar {
