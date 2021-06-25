@@ -1,42 +1,62 @@
 .file-structure {
-  flex: 1 1 auto;
+  overflow-y: scroll;
+  padding: 1rem 0;
+  flex: 0.3 0 10rem;
   order: -1;
   background-color: #2C363F;
 }
 
-.file-structure__ul {
-  padding-inline-start: 1.3rem;
-  list-style-type: none;
+.file-structure::-webkit-scrollbar {
+  display: none;
 }
 
-.file-structure__li {
-  font-size: 1.3rem;
-}
-
-.file-structure__a {
-  text-decoration: none;
-  color: #DCDCDD;
-}
-
-.file-structure__a:hover {
-  color: #E5BD47;
-  transition: all .5s ease-in-out;
-}
-
-.file-structure__a.file-structure__a-folder:focus {
-  color: #E5BD47;
-  text-decoration: underline;
-  transition: all .5s ease-in-out;
-}
-
-.file-structure__a.file-structure__a-folder--active {
-  color: #E5BD47;
-  text-decoration: underline;
-  transition: all .5s ease-in-out;
+@media screen and (min-width: 600px) {
+  .file-structure {
+    flex: 0.3 0 auto;
+    max-height: 88vh;
+  }
 }
 
 .file-structure__icons {
   display: inline-flex;
   padding-right: 0.5rem;
   vertical-align: middle;
+}
+
+/* details */
+.fs__details,
+.fs__file {
+  padding-left: 1.4rem;
+}
+
+.fs__folder,
+.fs__file {
+  cursor: pointer;
+  color: #DCDCDD;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+}
+
+/* remove default marker */
+summary {
+  outline: none;
+  /* cursor: pointer; */
+}
+
+details summary::-webkit-details-marker {
+  display: none
+}
+
+details > summary {
+  list-style: none;
+}
+
+details summary:before {
+  content: '\229E';
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+details[open] > summary:before {
+  content: '\229F';
 }

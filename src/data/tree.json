@@ -180,7 +180,7 @@
         {"name": "Subclass Labyrinthodontia", "parent": "4", "type": "file", "id": "4.0"},
         {"name": "Subclass Lepospondyli", "parent": "4", "type": "file", "id": "4.1"},
         {"name": "Subclass Lissamphibia", "parent": "4", "type": "folder", "id": "4.2"},
-          {"name": "Order Anura", "parent": "4.2", "type": "folder", "id": "4.2.0"},
+          {"name": "Order Anura", "parent": "4.2", "type": "file", "id": "4.2.0"},
           {"name": "Order Caudata (Urodela)", "parent": "4.2", "type": "file", "id": "4.2.1"},
           {"name": "Order Gymnophiona (Apoda)", "parent": "4.2", "type": "file", "id": "4.2.2"}
   ]

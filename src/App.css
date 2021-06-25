@@ -5,10 +5,18 @@ body {
   min-height: 100vh;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 #root {
   display: flex;
   flex-direction: column;
   min-height: inherit;
+}
+
+#root::-webkit-scrollbar {
+  display: none;
 }
 
 html {
