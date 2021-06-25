@@ -18,42 +18,54 @@
   }
 }
 
-.file-structure__icons {
+.file-structure__icon-folder,
+.file-structure__icon-file {
   display: inline-flex;
-  padding-right: 0.5rem;
   vertical-align: middle;
 }
 
-/* details */
-.fs__details,
+.file-structure__icon-folder::before {
+  content: url("../../assets/icons/folder.svg");
+  margin-right: 0.5rem;
+}
+
+.file-structure__icon-file::before {
+  content: url("../../assets/icons/file.svg");
+  margin-right: 0.5rem;
+}
+
+.fs__details {
+  margin-left: 0.5rem;
+}
+
 .fs__file {
-  padding-left: 1.4rem;
+  margin-left: 1.7rem;
+  pointer-events: none;
+}
+
+.fs__folder {
+  cursor: pointer;
 }
 
 .fs__folder,
 .fs__file {
-  cursor: pointer;
+  display: inline-flex;
   color: #DCDCDD;
   font-size: 1.3rem;
   line-height: 1.6rem;
 }
 
-.fs__folder:hover,
-.fs__file:hover {
+.fs__folder:hover {
   color: #E5BD47;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-.fs__folder:hover > div.file-structure__icons > div > svg,
-.fs__file:hover >  div.file-structure__icons > div > svg{
-  fill: #E5BD47;
-  transition: all 0.5s ease-in-out;
+.fs__folder:hover > .file-structure__icon-folder::before {
+  content: url("../../assets/icons/opened-folder.svg");
 }
 
-/* remove default marker */
 summary {
   outline: none;
-  /* cursor: pointer; */
 }
 
 details summary::-webkit-details-marker {
@@ -72,4 +84,8 @@ details summary:before {
 
 details[open] > summary:before {
   content: '\229F';
+}
+
+details[open] > .fs__folder > .file-structure__icon-folder::before {
+  content: url("../../assets/icons/opened-folder.svg");
 }
